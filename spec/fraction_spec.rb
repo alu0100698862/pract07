@@ -68,10 +68,10 @@ describe Fraction do
 
   describe "#Multiplicacion de fracciones" do
     it "Multiplicacion de f1 y f2, numerador" do
-      @f1.*(@f2).num.should eq(1)
+      (@f1*@f2).num.should == 1
     end
     it "Multiplicacion de f1 y f2, denominador" do
-      @f1.*(@f2).den.should eq(6)
+      (@f1*@f2).den.should == 6
     end
   end
   
