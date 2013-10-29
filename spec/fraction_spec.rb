@@ -86,10 +86,10 @@ describe Fraction do
   
   describe "#Valor absoluto de fracciones" do
     it "Valor absoluto de f1, numerador" do
-      @f1.abs().num.should eq(1)
+      (@f1.abs).num.should == 1
     end
     it "Valor absoluto de f1, denominador" do
-      @f1.abs().den.should eq(4)
+      (@f1.abs).den.should == 4
     end
   end
   
