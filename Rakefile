@@ -1,6 +1,8 @@
-task :default => :lib
+require 'rspec/core/rake_task'
+
+$:.unshift File.dirname(__FILE__) + 'lib'
+
 task :default => :spec
-task :default => :thtml
 
 desc "Espectativas de la clase fraccion"
 task :lib do
