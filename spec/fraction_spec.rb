@@ -26,10 +26,10 @@ describe Fraction do
   
   describe "#Llamadas a los metodos num() y den():" do
     it "Obtencion del numerador" do
-      @f2.num().should eq(2)
+      (@f2.num).should == 2
     end
     it "Obtencion del denominador" do
-      @f2.den().should eq(3)
+      (@f2.den).should == 3
     end
   end
   
