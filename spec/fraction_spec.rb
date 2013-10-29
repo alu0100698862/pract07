@@ -106,8 +106,8 @@ describe Fraction do
       @f1.reciprocal().den.should == 1
     end
     it "Reciproco de f1" do
-      @f2.reciprocal().num.should eq(3)
-      @f2.reciprocal().den.should eq(2)
+      @f2.reciprocal().num.should == 3
+      @f2.reciprocal().den.should == 2
     end
   end
   
