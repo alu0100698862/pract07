@@ -95,8 +95,8 @@ describe Fraction do
   
   describe "#Opuesto de fracciones" do
     it "Opuesto de f1, numerador" do
-      @f1.-@().num.should eq(-1)
-      @f1.-@().den.should eq(4)
+      (-@f1).num.should == -1
+      (-@f1).den.should == 4
     end
   end
   

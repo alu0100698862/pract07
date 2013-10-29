@@ -62,8 +62,8 @@ class Fraction
      Fraction.new(@num.abs, @den.abs)
   end
   
-  def -@()
-    Fraction.new(@num * -1, @den)
+  def -@
+    Fraction.new(-@num,@den)
   end
    
    def reciprocal()
