@@ -125,27 +125,27 @@ describe Fraction do
 
   end
   
-#   describe "#Comparaciones" do
-#     it "Comparacion < de f1 y f2" do
-#       @f1.<(@f2).should eq(true)
-#     end
-#     it "Comparacion > de f1 y f2" do
-#       @f1.>(@f2).should eq(false)
-#     end
-#     it "Comparacion <= de f1 y f2" do
-#       @f1.<=(@f2).should eq(true)
-#     end
-#     it "Comparacion >= de f1 y f2" do
-#       @f1.>=(@f2).should eq(false)
-#     end
-#   end
-#   
-#   describe "#Modulo de 2 fracciones" do
-#     it "modulo de f1 y f2" do
-#       @f3.%(@f2).should eq(12)    
-#     end
-#   end
-#   
+  describe "#Comparaciones" do
+    it "Comparacion < de f1 y f2" do
+      (@f1 < @f2).should == true
+    end
+    it "Comparacion > de f1 y f2" do
+      (@f1 > @f2).should == false
+    end
+    it "Comparacion <= de f1 y f2" do
+      (@f1 <= @f2).should == true
+    end
+    it "Comparacion >= de f1 y f2" do
+      (@f1 >= @f2).should == false
+    end
+  end
+  
+  describe "#Modulo de 2 fracciones" do
+    it "modulo de f1 y f2" do
+      @f3.%(@f2).should eq(12)    
+    end
+  end
+  
 end
 
 
