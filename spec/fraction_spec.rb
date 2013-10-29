@@ -11,16 +11,16 @@ describe Fraction do
 
   describe "#Almacenamiento del numerador y denominador: " do
     it "Almacenamiento ok del numerador" do
-	@f1.num.should eq(1)
+	@f1.num.should == 1
     end
     it "Almacenamiento ok del denominador" do
-	@f1.den.should eq(4)
+	@f1.den.should == 4
     end
     it "Almacenamiento ok minimo del numerador" do
-      @f2.num.should eq(2)
+      @f2.num.should == 2
     end
     it "Almacenamiento ok minimo del denominador" do
-      @f2.den.should eq(3)
+      @f2.den.should == 3
     end 
   end
   
@@ -35,16 +35,16 @@ describe Fraction do
   
   describe "#Mostrar en string" do
     it "String de la fraccion 1" do
-      @f1.to_string().should eq("1/4")
+      @f1.to_s().should eq("1/4")
     end
     it "String de la fraccion 2" do
-      @f2.to_string().should eq("2/3")
+      @f2.to_s().should eq("2/3")
     end
   end
   
   describe "#Mostrar en float" do
     it "Float de la fraccion 1" do
-      @f1.to_float().should eq(0.25)
+      @f1.to_f().should eq(0.25)
     end
   end
   
@@ -120,32 +120,32 @@ describe Fraction do
   
   describe "#Comparacion de igualdad de fracciones" do
     it "Comparacion de f1 y f2" do
-      @f1.==(@f2).should eq(false)
+      (@f1 == @f2 ).should == false
     end
 
   end
   
-  describe "#Comparaciones" do
-    it "Comparacion < de f1 y f2" do
-      @f1.<(@f2).should eq(true)
-    end
-    it "Comparacion > de f1 y f2" do
-      @f1.>(@f2).should eq(false)
-    end
-    it "Comparacion <= de f1 y f2" do
-      @f1.<=(@f2).should eq(true)
-    end
-    it "Comparacion >= de f1 y f2" do
-      @f1.>=(@f2).should eq(false)
-    end
-  end
-  
-  describe "#Modulo de 2 fracciones" do
-    it "modulo de f1 y f2" do
-      @f3.%(@f2).should eq(12)    
-    end
-  end
-  
+#   describe "#Comparaciones" do
+#     it "Comparacion < de f1 y f2" do
+#       @f1.<(@f2).should eq(true)
+#     end
+#     it "Comparacion > de f1 y f2" do
+#       @f1.>(@f2).should eq(false)
+#     end
+#     it "Comparacion <= de f1 y f2" do
+#       @f1.<=(@f2).should eq(true)
+#     end
+#     it "Comparacion >= de f1 y f2" do
+#       @f1.>=(@f2).should eq(false)
+#     end
+#   end
+#   
+#   describe "#Modulo de 2 fracciones" do
+#     it "modulo de f1 y f2" do
+#       @f3.%(@f2).should eq(12)    
+#     end
+#   end
+#   
 end
 
 
