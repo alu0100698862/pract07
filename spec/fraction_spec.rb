@@ -44,7 +44,7 @@ describe Fraction do
   
   describe "#Mostrar en float" do
     it "Float de la fraccion 1" do
-      @f1.to_f().should eq(0.25)
+      (@f1.to_f).should == 0.25
     end
   end
   
