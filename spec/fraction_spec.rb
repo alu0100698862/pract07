@@ -77,10 +77,10 @@ describe Fraction do
   
   describe "#Division de fracciones" do
     it "Division de f1 y f2, numerador" do
-      @f1./(@f2).num.should eq(3)
+      (@f1/@f2).num.should == 3
     end
     it "Division de f1 y f2, denominador" do
-      @f1./(@f2).den.should eq(8)
+      (@f1/@f2).den.should == 8
     end
   end
   
