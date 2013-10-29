@@ -102,8 +102,8 @@ describe Fraction do
   
   describe "#Reciproco de fracciones" do
     it "Reciproco de f1" do
-      @f1.reciprocal().num.should eq(4)
-      @f1.reciprocal().den.should eq(1)
+      @f1.reciprocal().num.should == 4
+      @f1.reciprocal().den.should == 1
     end
     it "Reciproco de f1" do
       @f2.reciprocal().num.should eq(3)
