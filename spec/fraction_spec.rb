@@ -35,10 +35,10 @@ describe Fraction do
   
   describe "#Mostrar en string" do
     it "String de la fraccion 1" do
-      @f1.to_s().should eq("1/4")
+      (@f1.to_s).should == "1/4"
     end
     it "String de la fraccion 2" do
-      @f2.to_s().should eq("2/3")
+      (@f2.to_s).should == "2/3"
     end
   end
   
