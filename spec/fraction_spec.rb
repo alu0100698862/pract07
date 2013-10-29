@@ -59,10 +59,10 @@ describe Fraction do
   
   describe "#Resta de fracciones" do
     it "Resta de f1 y f2, numerador" do
-      @f1.-(@f2).num.should eq(-5)
+      (@f1-@f2).num.should == -5
     end
     it "Resta de f1 y f2, denominador" do
-      @f1.-(@f2).den.should eq(12)
+      (@f1-@f2).den.should == 12
     end
   end
 
