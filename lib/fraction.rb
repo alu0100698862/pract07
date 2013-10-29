@@ -2,6 +2,8 @@
 
 require "gcd.rb"
 
+include Comparable
+
 class Fraction
   
   attr_accessor :num, :den  
@@ -24,11 +26,11 @@ class Fraction
     @den
   end
   
-  def to_string()
+  def to_s()
     "#{@num}/#{@den}"
   end
  
-   def to_float()
+   def to_f()
      flotante =@num.to_f/@den.to_f
      flotante
    end
@@ -72,25 +74,9 @@ class Fraction
      Fraction.new( @den *other.num, @num * other.den)
    end
    
-  def ==(other)
-    if(@num == other.num) && (@den == other.den)
-      true
-    else
-      false
-    end
+  def <=>(other)
+    to_f() <=> other.to_f()
   end
   
-  def <(other)    
-    to_float() < other.to_float()    
-  end
-  def >(other)    
-    to_float() > other.to_float()    
-  end
-  def <=(other)    
-    to_float() <= other.to_float()    
-  end
-  def >=(other)    
-    to_float() >= other.to_float()    
-  end
       
 end
