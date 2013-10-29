@@ -113,8 +113,8 @@ describe Fraction do
   
   describe "#Reciproco de la division de dos fracciones" do
     it "Reciproco de f1/f2" do
-      @f1.reciprocal_div(@f2).num.should eq(8)
-      @f1.reciprocal_div(@f2).den.should eq(3)
+      @f1.reciprocal_div(@f2).num.should == 8
+      @f1.reciprocal_div(@f2).den.should == 3
     end
   end
   
