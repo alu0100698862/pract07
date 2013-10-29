@@ -50,10 +50,10 @@ describe Fraction do
   
   describe "#Suma de fracciones" do
     it "Suma de f1 y f2, numerador" do
-      @f1.+(@f2).num.should eq(11)
+      (@f1+@f2).num.should == 11
     end
     it "Suma de f1 y f2, denominador" do
-      @f1.+(@f2).den.should eq(12)
+      (@f1+@f2).den.should == 12
     end
   end
   
