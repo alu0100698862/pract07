@@ -44,7 +44,7 @@ describe Fraction do
   
   describe "#Mostrar en float" do
     it "Float de la fraccion 1" do
-      @f1.to_f.should == 1/2
+      @f1.to_f.should == 0.5
     end
   end
   
@@ -142,7 +142,7 @@ describe Fraction do
   
   describe "#Modulo de 2 fracciones" do
     it "modulo de f1 y f2" do
-      (@f3 % @f2).should == 17    
+      (@f3 % @f2).should == 18    
     end
   end
   
