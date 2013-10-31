@@ -1,4 +1,4 @@
-require 'rspec/core/rake_task'
+require "lib/fraction.rb"
 
 $:.unshift File.dirname(__FILE__) + 'lib'
 
@@ -9,7 +9,7 @@ task :lib do
   sh "rspec -I. spec/fraction_spec.rb"
 end
 desc "Formato documentacion"
-task :spec do
+task :spec_local do
   sh "rspec -I. spec/fraction_spec.rb --format documentation"
 end
 desc "Test en formato html"
